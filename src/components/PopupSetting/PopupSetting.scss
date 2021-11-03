@@ -1,0 +1,97 @@
+.Popupsetting {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .popupWrapper {
+    width: 100vw;
+    height: 100vh;
+
+    .overPlay {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .close {
+        position: fixed;
+        top: 40px;
+        right: 25px;
+        cursor: pointer;
+      }
+
+      .box {
+        width: 260px;
+        height: 130px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+
+        .upload {
+          width: 100%;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          border-bottom: 1px solid rgb(214, 210, 210);
+          border-radius: 10px 10px 0px 0px;
+
+          .btn {
+            cursor: pointer;
+            background-color: #ffffff;
+            padding: 20px;
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+            border: none;
+
+            p {
+              padding-top: 5px;
+              font-weight: bold;
+            }
+          }
+
+          &:hover {
+            background-color: rgb(231, 225, 225);
+            .btn {
+              background-color: rgb(231, 225, 225);
+            }
+          }
+
+          p {
+            padding-left: 5px;
+            font-weight: bold;
+          }
+        }
+
+        .logout {
+          width: 100%;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          border-radius: 0px 0px 10px 10px;
+
+          &:hover {
+            background-color: rgb(231, 225, 225);
+          }
+
+          p {
+            padding-left: 5px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

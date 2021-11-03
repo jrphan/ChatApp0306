@@ -1,0 +1,24 @@
+.Conversations {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+
+  &:hover {
+    background-color: rgb(243, 234, 234);
+    transition: 0.5s all ease;
+  }
+
+  .img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .name {
+    padding-left: 15px;
+    font-size: 14px;
+  }
+}
